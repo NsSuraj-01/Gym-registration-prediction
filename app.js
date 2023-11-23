@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/stats.html");
 })
 
 app.post("/", (req, res) => {
@@ -32,6 +32,6 @@ app.post("/", (req, res) => {
   res.send("Your BMI: " + index + "<br>Status: " + result(index));
 })
 
-app.listen(3000, () => {
+app.listen(1000, () => {
   console.log("Server is running on Port 3000");
 })
