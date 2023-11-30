@@ -136,6 +136,10 @@ app.get("/", (req, res) => {
   res.render("getData");
 });
 
+app.get("/form", (req, res) => {
+  res.render("form");
+})
+
 app.post("/getData", async (req, res) => {
   const sid = req.body.id;
   const stInfo = await find("StudentID", sid);
