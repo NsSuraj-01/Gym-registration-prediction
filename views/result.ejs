@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medical Test Results</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+    <h2 class="mb-4">Medical Test Results</h2>
+
+    <% results.forEach((doc) => { %>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Name: <%=doc.FirstName +' '+ doc.LastName%></h5>
+                <p class="card-text">Student ID: <%=doc.StudentID%></p>
+                <p class="card-text">Age: <%=doc.Age%></p>
+                <p class="card-text">Gender: <%=doc.Gender%></p>
+                <p class="card-text">Blood Pressure: <%=doc.BloodPressure%></p>
+                <p class="card-text">Heart Rate: <%= doc.HeartRate%></p>
+                <p class="card-text">Cholesterol: <%=doc.Cholesterol%></p>
+                <p class="card-text">Test Date: <%= doc.TestDate%></p>
+                <p class="card-text">Test Result: <%= doc.TestResult%></p>
+            </div>
+        </div>
+    <% }) %>
+
+    
+
+    <!-- Repeat the above card structure for each result -->
+
+</div>
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

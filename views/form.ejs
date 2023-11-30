@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Test</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header with Logo -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Replace 'your-logo.png' with the path to your actual logo file -->
+      <img src="/public/images/Sevou.jpeg" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+  </nav>
+
+<div class="container mt-3">
+  <h2>Check Results</h2>
+
+  <div class="card">
+    <div class = "card-body">
+      <form action="/" method="post">
+        <!-- Patient Information -->
+        <div class="form-group">
+          <label for="studentId">Student Id:</label>
+          <input name="studentId" type="text" class="form-control" id="studentId" placeholder="Enter student ID">
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script
