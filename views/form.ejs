@@ -3,48 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Medical Test</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Student Medical Information</title>
+  <!-- Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
-    <!-- Header with Logo -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <!-- Replace 'your-logo.png' with the path to your actual logo file -->
-      <img src="/public/images/Sevou.jpeg" width="50" height="50" class="d-inline-block align-top" alt="Logo">
-
-      <div class="navbar-header">
-        <p class="navbar-brand">MEDICAL CHECK</p>
+<div class="container mt-5">
+  <h2>Student Medical Information Form</h2>
+  <form action = "/form" method="post">
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="studentId">Student ID</label>
+        <input type="text" name="StudentID" class="form-control" id="studentId" placeholder="Enter Student ID">
       </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <!-- 6 -->
-        <li id="home"><a href="/">HOME</a></li>
-        <li id="about"><a href="/form">POST</a></li>
-        <li id="contact"><a href="/getData">GET</a></li>
-      </ul>
-  </nav>
-
-<div class="container mt-3">
-  <h2>Check Results</h2>
-
-  <div class="card">
-    <div class = "card-body">
-      <form action="/" method="post">
-        <!-- Patient Information -->
-        <div class="form-group">
-          <label for="studentId">Student Id:</label>
-          <input name="studentId" type="text" class="form-control" id="studentId" placeholder="Enter student ID">
-        </div>
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+      <div class="form-group col-md-4">
+        <label for="firstName">First Name</label>
+        <input type="text" name="FirstName"  class="form-control" id="firstName" placeholder="Enter First Name">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="LastName" class="form-control" id="lastName" placeholder="Enter Last Name">
+      </div>
     </div>
-  </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="age">Age</label>
+        <input type="number" name="Age" class="form-control" id="age" placeholder="Enter Age">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="gender">Gender</label>
+        <select id="gender" name="Gender" class="form-control">
+          <option selected>Choose...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="height">Height (cm)</label>
+        <input type="number" name="Height" class="form-control" id="height" placeholder="Enter Height">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" name="Weight" class="form-control" id="weight" placeholder="Enter Weight">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="bloodPressure">Blood Pressure</label>
+        <input type="text" name="BloodPressure" class="form-control" id="bloodPressure" placeholder="Enter Blood Pressure">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="cholesterol">Cholesterol</label>
+        <input type="text" name="Cholesterol" class="form-control" id="cholesterol" placeholder="Enter Cholesterol">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="heartRate">Heart Rate</label>
+        <input name = "HeartRate" type="number" class="form-control" id="heartRate" placeholder="Enter Heart Rate">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="testDate">Test Date</label>
+        <input name = "TestDate" type="date" class="form-control" id="testDate">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="testResult">Test Result</label>
+        <input type="text" name="TestResult" class="form-control" id="testResult" placeholder="Enter Test Result">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </div>
 
-<!-- Bootstrap JS and Popper.js -->
+<!-- Bootstrap JS and Popper.js scripts (required for Bootstrap components) -->
+<!-- document.getElementById('testDate').max = new Date().toISOString().split('T')[0]; -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
