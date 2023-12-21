@@ -60,9 +60,9 @@ async function findAndReplace(key, value, doc) {
   }
 }
 
-async function getCount() {
+// async function getCount() {
   
-}
+// }
 
 // Server
 app.get("/", (req, res) => {
