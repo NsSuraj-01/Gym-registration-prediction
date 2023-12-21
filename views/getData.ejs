@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -15,6 +15,62 @@
       <div class="card">
         <div class="card-header">
           <h5 class="card-title">Student's Medical information</h5>
+        </div>
+        <div class="card-body">
+          <form action="/getData" method="post">
+            <div class="form-group">
+              <label for="studentId">Student ID</label>
+              <input type="text" class="form-control" id="studentId" placeholder="Enter your roll number" name="id">
+            </div>
+            <button type="submit" class="btn btn-primary" name="button">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (for Bootstrap modal, dropdown, etc.)  -->
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html> --> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Data</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header class="bg-light p-3">
+  <div class="container">
+    
+      <div class="col-md-10 text-right">
+        <!-- Navigation Buttons -->
+        <a href="/views/form.ejs" class="btn btn-primary mx-2">ADD</a>
+        <a href="/views/getData.ejs" class="btn btn-primary mx-2">About</a>
+        <a href="/views/result.ejs" class="btn btn-primary mx-2">Contact</a>
+      </div>
+    
+  </div>
+</header>
+
+<!-- Main Content Section -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">Student's Medical Information</h5>
         </div>
         <div class="card-body">
           <form action="/getData" method="post">
