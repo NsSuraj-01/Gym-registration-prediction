@@ -1,0 +1,20 @@
+{
+  "name": "practise",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "From the gym-management point of view, the number of students might register for the gym in the following semester is predicted.\r Based on the physical health check up conducted every month, the appropriate details were taken.\r Based on the obtained details the BMI is calculated. Rather than waiting till the end of semester for the registration of all students, monthly analysis helps to understand\r how many students or not physically fit and might turn up to the gym.",
+  "dependencies": {
+    "axios": "^1.7.8",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.0.1",
+    "python-shell": "^5.0.0"
+  }
+}
