@@ -1,1 +1,2 @@
 # Gym-registration-prediction
+From the gym-management point of view, the number of students might register for the gym in the following semester is predicted. Based on the physical health check up conducted every month, the appropriate details were taken. Based on the obtained details the BMI is calculated. Rather than waiting till the end of semester for the registration of all students, monthly analysis helps to understand how many students might turn up to the gym.
